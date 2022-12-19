@@ -4,3 +4,12 @@
 nav {
   background-image: url('../assets/images/VN-en-20221214-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
 }
+.red-button {
+  background: rgb(229, 9, 20);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 3px;
+  padding: 7px 17px;
+  color: white;
+}

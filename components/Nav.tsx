@@ -40,7 +40,7 @@ const Nav = () => {
             ></path>
           </g>
         </svg>
-        <div className='flex flex-row relative'>
+        <div className='flex flex-row relative gap-4'>
           <div className='text-white text-2xl absolute top-[50%] translate-y-[-50%] left-1'>
             <TbWorld />
           </div>
@@ -59,6 +59,7 @@ const Nav = () => {
               </option>
             ))}
           </select>
+          <button className='red-button'>Signin</button>
         </div>
       </div>
     </nav>
