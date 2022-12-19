@@ -11,11 +11,11 @@ const Nav = () => {
   const optionLang = [
     {
       locale: 'en',
-      label: 'English',
+      label: i18n.t('lang.en'),
     },
     {
       locale: 'vi',
-      label: 'Tiếng Việt',
+      label: i18n.t('lang.vi'),
     },
   ];
   const handleChangeLang = (e: ChangeEvent<HTMLSelectElement>) => {
