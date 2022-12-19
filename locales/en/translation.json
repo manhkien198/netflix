@@ -2,5 +2,9 @@
   "lang": {
     "en": "English",
     "vi": "Vietnamese"
-  }
+  },
+  "signin": "Sign In",
+  "slogan": "Unlimited movies, TV shows, and more.",
+  "subtitle": "Watch anywhere. Cancel anytime.",
+  "titleAddMail": "Ready to watch? Enter your email to create or restart your membership."
 }

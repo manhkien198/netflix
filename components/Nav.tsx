@@ -1,8 +1,11 @@
 import { ChangeEvent, useState, useEffect } from 'react';
 import i18n from '../i18n';
 import { TbWorld } from 'react-icons/tb';
+import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 const Nav = () => {
   const [lang, setLang] = useState<string>();
+  const { t } = useTranslation();
   useEffect(() => {
     if (localStorage.getItem('i18nextLng')) {
       setLang(localStorage.getItem('i18nextLng') as string);
@@ -23,7 +26,7 @@ const Nav = () => {
     setLang(e.target.value);
   };
   return (
-    <nav className='px-10 py-5'>
+    <nav className='px-10 py-5 relative z-20'>
       <div className='flex flex-row justify-between'>
         <svg
           fill='#e50914'
@@ -44,10 +47,11 @@ const Nav = () => {
           <div className='text-white text-2xl absolute top-[50%] translate-y-[-50%] left-1'>
             <TbWorld />
           </div>
+          <div className='arrow'>▼</div>
           <select
             onChange={handleChangeLang}
             value={lang}
-            className='text-white bg-transparent px-5 pl-7 py-1 border-white border rounded lg:text-2xl sm:text-xl  md:w-[12rem] sm:w-[8rem]'
+            className='text-white bg-transparent px-5 pl-7 py-1 border-white border rounded lg:text-2xl sm:text-xl md:w-[12rem] sm:w-[8rem]'
           >
             {optionLang.map((option) => (
               <option
@@ -59,7 +63,7 @@ const Nav = () => {
               </option>
             ))}
           </select>
-          <button className='red-button'>Signin</button>
+          <button className='red-button rounded text-2xl'>{t('signin')}</button>
         </div>
       </div>
     </nav>
