@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+nav {
+  background-image: url('../assets/images/VN-en-20221214-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+}

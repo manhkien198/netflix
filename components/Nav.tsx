@@ -1,6 +1,6 @@
 import { ChangeEvent, useState, useEffect } from 'react';
 import i18n from '../i18n';
-
+import { TbWorld } from 'react-icons/tb';
 const Nav = () => {
   const [lang, setLang] = useState<string>();
   useEffect(() => {
@@ -29,7 +29,7 @@ const Nav = () => {
           fill='#e50914'
           viewBox='0 0 111 30'
           data-uia='netflix-logo'
-          className='svg-icon svg-icon-netflix-logo md:w-[8.375rem] md:h-[2.25rem]'
+          className='svg-icon svg-icon-netflix-logo w-[8.375rem] h-[2.25rem]'
           aria-hidden='true'
           focusable='false'
         >
@@ -40,10 +40,21 @@ const Nav = () => {
             ></path>
           </g>
         </svg>
-        <div className='flex flex-row'>
-          <select onChange={handleChangeLang} value={lang}>
+        <div className='flex flex-row relative'>
+          <div className='text-white text-2xl absolute top-[50%] translate-y-[-50%] left-1'>
+            <TbWorld />
+          </div>
+          <select
+            onChange={handleChangeLang}
+            value={lang}
+            className='text-white bg-transparent px-5 pl-7 py-1 border-white border rounded lg:text-2xl sm:text-xl  md:w-[12rem] sm:w-[8rem]'
+          >
             {optionLang.map((option) => (
-              <option key={option.locale} value={option.locale}>
+              <option
+                className='text-black'
+                key={option.locale}
+                value={option.locale}
+              >
                 {option.label}
               </option>
             ))}
