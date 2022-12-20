@@ -12,6 +12,7 @@ import Download from '../assets/images/download-icon.gif';
 import Kids from '../assets/images/kids.png';
 import Phone from '../assets/images/phone.jpg';
 import { SlArrowRight } from 'react-icons/sl';
+import Questions from '../components/Questions';
 export default function Home() {
   const { t } = useTranslation();
   return (
@@ -75,6 +76,10 @@ export default function Home() {
         desc={t('descFifthSection')}
         image={<Image className='img' src={Phone.src} alt='Phone' fill />}
       />
+      <Questions />
+      <footer className='text-center text-white text-slate-500 bg-black py-5'>
+        Netflix VietNam
+      </footer>
     </>
   );
 }

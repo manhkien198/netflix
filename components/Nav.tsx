@@ -3,6 +3,7 @@ import i18n from '../i18n';
 import { TbWorld } from 'react-icons/tb';
 import { t } from 'i18next';
 import { useTranslation } from 'react-i18next';
+import Link from 'next/link';
 const Nav = () => {
   const [lang, setLang] = useState<string>();
   const { t } = useTranslation();
@@ -47,7 +48,9 @@ const Nav = () => {
           <div className='text-white text-2xl absolute top-[50%] translate-y-[-50%] left-1'>
             <TbWorld />
           </div>
-          <div className='arrow'>▼</div>
+          <div className='arrow sm:right-[47%] lg:right-[40%] md:right-[50%]'>
+            ▼
+          </div>
           <select
             onChange={handleChangeLang}
             value={lang}
@@ -63,9 +66,12 @@ const Nav = () => {
               </option>
             ))}
           </select>
-          <button className='font-normal text-white py-2 px-4 bg-[#e50914] rounded text-[1rem]'>
-            {t('signin')}
-          </button>
+          <Link
+            href='movies'
+            className='font-normal text-white py-2 px-4 bg-[#e50914] rounded text-[1rem]'
+          >
+            {t('movies')}
+          </Link>
         </div>
       </div>
     </nav>

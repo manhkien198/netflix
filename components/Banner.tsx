@@ -7,11 +7,11 @@ const Banner = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className='md:h-[807px] lg:h-[773.094px] absolute inset-0  border-b-8 border-[#222] b-0'>
+      <div className='sm:h-[643px] md:h-[807px] lg:h-[767.094px] absolute inset-0  border-b-8 border-[#222] b-0'>
         <Image src={Bg.src} alt='' fill quality={100} />
         <div className='img-gradient z-10'></div>
       </div>
-      <div className='relative z-20 mx-auto max-w-[950px] text-center py-[100px] px-[5%] max-h-[563px]'>
+      <div className='relative z-20 mx-auto max-w-[950px] text-center py-[100px] sm:px-[3%] md:px-[5%] max-h-[563px]'>
         <h1 className='text-5xl text-white font-bold mx-32'>{t('slogan')}</h1>
         <h2 className='py-4 px-10 text-3xl text-white'>{t('subtitle')}</h2>
         <form>

@@ -7,7 +7,7 @@ export default function Media() {
   const Section = tw.section`py-[70px] px-[45px] border-b-8 border-[#222] bg-black relative md:mt-[156px] lg:mt-[122.094px]`;
   return (
     <Section>
-      <div className='flex justify-between items-center max-w-[1100px] mx-auto gap-10'>
+      <div className='flex sm:flex-wrap md:flex-nowrap  sm:justify-center md:justify-between items-center max-w-[1100px] mx-auto gap-10'>
         <div className='w-[52%]'>
           <h2 className='text-white text-[3.125rem]'>
             {t('titleFirstSection')}

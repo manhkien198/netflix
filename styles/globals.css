@@ -12,7 +12,6 @@ html {
 .arrow {
   color: white;
   position: absolute;
-  right: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
