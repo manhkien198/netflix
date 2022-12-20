@@ -6,5 +6,16 @@
   "signin": "Sign In",
   "slogan": "Unlimited movies, TV shows, and more.",
   "subtitle": "Watch anywhere. Cancel anytime.",
-  "titleAddMail": "Ready to watch? Enter your email to create or restart your membership."
+  "titleAddMail": "Ready to watch? Enter your email to create or restart your membership.",
+  "titleFirstSection": "Enjoy on your TV.",
+  "descFirstSection": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
+  "titleSecondSection": "Download your shows to watch offline.",
+  "descSecondSection": "Save your favorites easily and always have something to watch.",
+  "titleThirdSection": "Watch everywhere.",
+  "descThirdSection": "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.",
+  "titleFourthSection": "Create profiles for kids.",
+  "descFourthSection": "Send kids on adventures with their favorite characters in a space made just for them—free with your membership.",
+  "titleFifthSection": "Have an Android Phone? Get our new free plan!",
+  "descFifthSection": "Watch a selection of new movies and TV shows without adding any payment details!",
+  "download": "Get the app"
 }

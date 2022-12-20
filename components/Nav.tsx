@@ -51,7 +51,7 @@ const Nav = () => {
           <select
             onChange={handleChangeLang}
             value={lang}
-            className='text-white bg-transparent px-5 pl-7 py-1 border-white border rounded lg:text-2xl sm:text-xl md:w-[12rem] sm:w-[8rem]'
+            className='text-white text-[1rem] bg-transparent appearance-none px-5 pl-7 py-1 border-white border rounded lg:text-2xl sm:text-xl md:w-[12rem] sm:w-[8rem]'
           >
             {optionLang.map((option) => (
               <option
@@ -63,7 +63,9 @@ const Nav = () => {
               </option>
             ))}
           </select>
-          <button className='red-button rounded text-2xl'>{t('signin')}</button>
+          <button className='font-normal text-white py-2 px-4 bg-[#e50914] rounded text-[1rem]'>
+            {t('signin')}
+          </button>
         </div>
       </div>
     </nav>
