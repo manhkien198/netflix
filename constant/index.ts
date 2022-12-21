@@ -1,4 +1,7 @@
 import i18n from 'i18next';
+import { HeaderProps } from '../models';
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
+import { RxLightningBolt } from 'react-icons/rx';
 export interface Question {
   id: number;
   show: boolean;
@@ -41,5 +44,22 @@ export const LIST_QUESTIONS: Question[] = [
     show: false,
     question: i18n.t('question6'),
     answer: i18n.t('answer6'),
+  },
+];
+export const HEADER_LIST: HeaderProps[] = [
+  {
+    title: 'HOME',
+    icon: AiOutlineHome,
+    url: '/home',
+  },
+  {
+    title: 'TRENDING',
+    icon: RxLightningBolt,
+    url: '/home',
+  },
+  {
+    title: 'ACCOUNT',
+    icon: AiOutlineUser,
+    url: '/home',
   },
 ];
